@@ -18,6 +18,6 @@ var Body = React.createClass({
             <NewItem handleSubmit={this.handleSubmit}/>
             <AllItems items={this.state.items} />
           </div>
-      )
+      );
   }
 });

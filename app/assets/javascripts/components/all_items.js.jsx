@@ -6,7 +6,7 @@ var AllItems = React.createClass({
           <h3>{item.name}</h3>
           <p>{item.description}</p>
         </div>
-      )
+      );
     });
 
     return(
