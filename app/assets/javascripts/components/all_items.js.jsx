@@ -3,8 +3,8 @@ var AllItems = React.createClass({
     this.props.handleDelete(id);
   },
 
-  handleEdit: function() {
-
+  onUpdate: function(item) {
+    this.props.onUpdate(item);
   },
 
   render: function() {
@@ -13,7 +13,7 @@ var AllItems = React.createClass({
         <div key={item.id}>
           <Item item={item}
             handleDelete={this.handleDelete.bind(this, item.id)}
-            handleEdit={this.handleEdit}/>
+            handleUpdate={this.onUpdate}/>
         </div>
       );
     });
